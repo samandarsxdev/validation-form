@@ -1,3 +1,8 @@
+document.querySelector("#text").addEventListener("focusout", myText);
+document.querySelector("#text").addEventListener("focusout", myPass);
+
+
+
 document.querySelector('#btn').addEventListener('click',function(){myText();}
 
 )
@@ -29,11 +34,11 @@ function myPass(){
     pass = document.getElementById("password").value;
    try{
      if(pass==""){
-         errElement.classList.add("err2");
+         errElement.classList.add("err");
          throw 'bosh';
      }
      if(pass.lengt>0){
-         errElement.classList.remove("err2");
+         errElement.classList.remove("err");
          errElement.classList.add("valid");
          message.innerHTML="";
      }
